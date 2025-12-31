@@ -1,0 +1,140 @@
+/* =========================
+   KK THEME — Highlight.js (PHP)
+   Base: #202a37
+   ========================= */
+
+.kk-code {
+  /* contenedor */
+  background: #F7F9FC;
+  border: 1px solid #E1E7EF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(32, 42, 55, 0.06);
+}
+
+/* header superior (si lo usas) */
+.kk-code__header {
+  background: rgba(32, 42, 55, 0.04);
+  border-bottom: 1px solid #E1E7EF;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* label del lenguaje */
+.kk-code__lang {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #1B2430;
+}
+
+/* bloque de código */
+.kk-code__pre {
+  margin: 0;
+  padding: 18px 18px 20px;
+  overflow: auto;
+}
+
+/* base hljs */
+.kk-code .hljs {
+  background: transparent;
+  color: #202A37;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* selección */
+.kk-code .hljs::selection,
+.kk-code .hljs *::selection {
+  background: rgba(32, 42, 55, 0.10);
+}
+
+/* -------- Jerarquía semántica (lo importante más oscuro) -------- */
+
+/* Keywords / control */
+.kk-code .hljs-keyword,
+.kk-code .hljs-doctag,
+.kk-code .hljs-meta-keyword {
+  color: #1B2430;
+  font-weight: 600;
+}
+
+/* Identificadores importantes (clases, métodos, funciones) */
+.kk-code .hljs-title,
+.kk-code .hljs-title.function_,
+.kk-code .hljs-title.class_,
+.kk-code .hljs-function .hljs-title,
+.kk-code .hljs-class .hljs-title {
+  color: #2F3E53;
+  font-weight: 600;
+}
+
+/* Variables PHP ($this, $var) */
+.kk-code .hljs-variable,
+.kk-code .hljs-variable.language_,
+.kk-code .hljs-attr {
+  color: #2F3E53;
+}
+
+/* Strings */
+.kk-code .hljs-string,
+.kk-code .hljs-regexp {
+  color: #3F6F6B;
+}
+
+/* Números y booleanos */
+.kk-code .hljs-number,
+.kk-code .hljs-literal {
+  color: #7A4A1D;
+  font-weight: 600;
+}
+
+/* Comentarios (menos importante -> más claro) */
+.kk-code .hljs-comment,
+.kk-code .hljs-quote {
+  color: #8A94A6;
+  font-style: italic;
+}
+
+/* Operadores / puntuación */
+.kk-code .hljs-operator,
+.kk-code .hljs-punctuation {
+  color: #4A5568;
+}
+
+/* Namespace / imports / meta */
+.kk-code .hljs-meta,
+.kk-code .hljs-meta-string,
+.kk-code .hljs-import,
+.kk-code .hljs-export {
+  color: #5B6676;
+}
+
+/* Types / built-ins (int, string, array, etc.) */
+.kk-code .hljs-built_in,
+.kk-code .hljs-type {
+  color: #1B2430;
+  font-weight: 600;
+}
+
+/* Propiedades y nombres simbólicos */
+.kk-code .hljs-property,
+.kk-code .hljs-symbol {
+  color: #4A5568;
+}
+
+/* (Opcional) líneas muy largas: scrollbar discreto */
+.kk-code .kk-code__pre::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+.kk-code .kk-code__pre::-webkit-scrollbar-thumb {
+  background: rgba(32, 42, 55, 0.18);
+  border-radius: 999px;
+}
+.kk-code .kk-code__pre::-webkit-scrollbar-track {
+  background: rgba(32, 42, 55, 0.05);
+}

@@ -1,0 +1,20 @@
+{
+  "name": "kitukizuri-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build:search": "node tools/build-search-index.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "express": "^4.19.2",
+    "fuse.js": "^7.1.0",
+    "highlight.js": "^11.11.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2"
+  }
+}
